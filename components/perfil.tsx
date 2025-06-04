@@ -1,14 +1,11 @@
 "use client";
 
-import HeaderSettings from "@/components/headers/header-settings";
 import { LogOut, Mail, Lock, Palette, Pencil } from "lucide-react";
 import React from "react";
 
 export default function Perfil() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0f0f0f] to-[#111827] text-white">
-      <HeaderSettings />
-
       <div className="pt-[120px] flex flex-col items-center px-4 py-10 gap-8">
         {/* Avatar e nome */}
         <div className="flex flex-col items-center gap-2">

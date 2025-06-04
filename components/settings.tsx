@@ -3,22 +3,20 @@
 import Image from "next/image";
 import React from "react";
 import { Mic, PanelTop, Fan, Wind, Info, LogOut } from "lucide-react";
-import HeaderSettings from "./headers/header-settings";
+import Link from "next/link";
 
 export default function Settings() {
   const settings = [
-    { icon: Mic, label: "Comandos de Voz" },
-    { icon: PanelTop, label: "Janelas" },
-    { icon: Fan, label: "Ar-condicionado" },
-    { icon: Wind, label: "Limpador de Para-brisa" },
-    { icon: Info, label: "Sobre" },
-    { icon: LogOut, label: "Sair" },
+    { icon: Mic, label: "Comandos de Voz", href: "/configuracoes/comandos-voz" },
+    { icon: PanelTop, label: "Janelas", href: "/configuracoes/janelas" },
+    { icon: Fan, label: "Ar-condicionado", href: "/configuracoes/ar-condicionado" },
+    { icon: Wind, label: "Limpador de Para-brisa", href: "/configuracoes/limpador" },
+    { icon: Info, label: "Sobre", href: "/configuracoes/sobre" },
+    { icon: LogOut, label: "Sair", href: "/" },
   ];
 
   return (
     <div className="bg-gradient-to-b from-[#0f0f0f] to-[#111827] min-h-screen">
-      <HeaderSettings />
-
       <div className="pt-[120px] flex flex-col items-center px-4 gap-12 md:gap-16 lg:gap-20">
         {/* Logo e título */}
         <div className="flex flex-col items-center gap-3">
@@ -37,13 +35,14 @@ export default function Settings() {
         {/* Lista de opções */}
         <div className="flex flex-col gap-6">
           {settings.map((item, index) => (
-            <div
+            <Link
               key={index}
+              href={item.href}
               className="flex items-center gap-4 text-white hover:text-blue-400 transition-colors cursor-pointer"
             >
               <item.icon size={24} className="text-blue-400 md:w-7 md:h-7 lg:w-8 lg:h-8" />
               <span className="text-base md:text-lg lg:text-xl">{item.label}</span>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
