@@ -1,4 +1,4 @@
-import Header from "@/components/header";
+import Header from "@/components/headers/header";
 import PagePrincipal from "@/components/page-principal";
 import React from "react";
 

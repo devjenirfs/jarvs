@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React from "react";
 import { Mic, PanelTop, Fan, Wind, Info, LogOut } from "lucide-react";
-import HeaderSettings from "./header-settings";
+import HeaderSettings from "./headers/header-settings";
 
 export default function Settings() {
   const settings = [

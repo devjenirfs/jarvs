@@ -1,12 +1,13 @@
+
 import HeaderSettings from "@/components/headers/header-settings";
-import Settings from "@/components/settings";
+import Perfil from "@/components/perfil";
 import React from "react";
 
-export default function SettingsPage() {
+export default function PerfilPage() {
   return(
     <div>
       <HeaderSettings />
-      <Settings/>
+        <Perfil/>
     </div>
   );
 }
