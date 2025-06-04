@@ -5,8 +5,8 @@ import React from "react";
 
 export default function Perfil() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#0f0f0f] to-[#111827] text-white">
-      <div className="pt-[120px] flex flex-col items-center px-4 py-10 gap-8">
+    <div className="bg-gradient-to-b from-[#0f0f0f] to-[#111827] text-white">
+      <div className="pt-[120px] pb-[60px] flex flex-col items-center px-4 py-10 gap-8">
         {/* Avatar e nome */}
         <div className="flex flex-col items-center gap-2">
           <div className="w-20 h-20 rounded-full bg-blue-400 flex items-center justify-center text-black text-3xl font-bold">

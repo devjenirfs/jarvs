@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Login() {
   return(
-    <div className="bg-gradient-to-b from-[#0f0f0f] to-[#111827] min-h-screen flex flex-col items-center justify-center">
+    <div className="py-[60px] bg-gradient-to-b from-[#0f0f0f] to-[#111827] flex flex-col items-center justify-center">
       <Image src="/logo-jarvs.png" alt="Logo da Jarvs" width={300} height={300} />
       <div className="flex flex-col gap-4 w-full max-w-[400px] ">
         <input

@@ -52,7 +52,7 @@ export default function PagePrincipal() {
   };
 
   return (
-    <div className="pt-[120px] pb-[60px] flex flex-col gap-12 items-center">
+    <div className="py-[60px] flex flex-col gap-12 items-center ">
       {/* Grid dos cards principais */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[40px]">
         {functions.map((item, index) => (

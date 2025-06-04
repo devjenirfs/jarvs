@@ -2,22 +2,23 @@
 
 import Image from "next/image";
 import React from "react";
-import { Mic, PanelTop, Fan, Wind, Info, LogOut } from "lucide-react";
+import { Mic, Info, LogOut, Sun, User, FileText } from "lucide-react";
 import Link from "next/link";
 
 export default function Settings() {
   const settings = [
-    { icon: Mic, label: "Comandos de Voz", href: "/configuracoes/comandos-voz" },
-    { icon: PanelTop, label: "Janelas", href: "/configuracoes/janelas" },
-    { icon: Fan, label: "Ar-condicionado", href: "/configuracoes/ar-condicionado" },
-    { icon: Wind, label: "Limpador de Para-brisa", href: "/configuracoes/limpador" },
-    { icon: Info, label: "Sobre", href: "/configuracoes/sobre" },
+    { icon: User, label: "Conta", href: "settings/gerenciar-conta" },
+    { icon: Mic, label: "Comandos de Voz", href: "settings/comando-voz" },
+    { icon: Sun, label: "Tema", href: "settings/tema" },
+    { icon: Info, label: "Sobre", href: "settings/sobre" },
+    { icon: FileText, label: "Termos de Uso", href: "settings/termos-de-uso" },
+    { icon: FileText, label: "Política de Privacidade", href: "settings/politica-de-privacidade" },
     { icon: LogOut, label: "Sair", href: "/" },
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#0f0f0f] to-[#111827] min-h-screen">
-      <div className="pt-[120px] flex flex-col items-center px-4 gap-12 md:gap-16 lg:gap-20">
+    <div className="bg-gradient-to-b from-[#0f0f0f] to-[#111827]">
+      <div className="py-[60px] flex flex-col items-center px-4 gap-12 md:gap-16 lg:gap-20">
         {/* Logo e título */}
         <div className="flex flex-col items-center gap-3">
           <Image
@@ -38,10 +39,15 @@ export default function Settings() {
             <Link
               key={index}
               href={item.href}
-              className="flex items-center gap-4 text-white hover:text-blue-400 transition-colors cursor-pointer"
+              className="group flex items-center gap-4 text-white transition-colors cursor-pointer"
             >
-              <item.icon size={24} className="text-blue-400 md:w-7 md:h-7 lg:w-8 lg:h-8" />
-              <span className="text-base md:text-lg lg:text-xl">{item.label}</span>
+              <item.icon
+                size={24}
+                className="text-blue-400 transition-colors md:w-7 md:h-7 lg:w-8 lg:h-8 group-hover:text-[#0f0f0f]"
+              />
+              <span className="text-base md:text-lg lg:text-xl group-hover:text-[#0f0f0f]">
+                {item.label}
+              </span>
             </Link>
           ))}
         </div>
