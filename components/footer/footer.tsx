@@ -15,8 +15,8 @@ export default function Footer() {
           Política de Privacidade
         </a>
         <span>|</span>
-        <a href="mailto:jeniffer.souza@ges.inatel.br" className="hover:text-white underline underline-offset-2">
-          Contato
+        <a href="/settings/sobre" className="hover:text-white underline underline-offset-2">
+          Sobre
         </a>
       </div>
     </footer>

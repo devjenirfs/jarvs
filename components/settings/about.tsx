@@ -19,13 +19,17 @@ export default function About() {
             <span className="font-semibold text-white">🛠 Tecnologias:</span> Next.js, Tailwind CSS, TypeScript, Lucide Icons, Web Speech API
           </p>
           <p>
-            <span className="font-semibold text-white">👩‍💻 Desenvolvido por:</span> Jeniffer Souza
+            <span className="font-semibold text-white">👩‍💻 Desenvolvimento:</span>
+            <ul className="list-disc ml-5">
+              <li>Software: Jeniffer Souza</li>
+              <li>Hardware: Felipe Kobayashi e Pedro Toledo</li>
+            </ul>
           </p>
           <p>
             <span className="font-semibold text-white">🏫 Projeto acadêmico:</span> Inatel – Instituto Nacional de Telecomunicações
           </p>
           <p>
-            <span className="font-semibold text-white">📫 Contato: </span> 
+            <span className="font-semibold text-white">📫 Contato:</span>{" "}
             <a
               href="mailto:jeniffer.souza@ges.inatel.br"
               className="no-underline hover:text-blue-300 transition"
