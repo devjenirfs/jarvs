@@ -22,19 +22,19 @@ export default function Header() {
       <div className="flex flex-row gap-4">
         <Link
           href="/perfil"
-          className="text-white hover:text-blue-400 transition"
-        aria-label="Perfil"
-      >
-        <User size={30} />
-      </Link>
+          className="group transition"
+          aria-label="Perfil"
+        >
+          <User size={30} className="text-blue-400 group-hover:text-blue-600 transition-colors" />
+        </Link>
 
-      {/* Ícone de configurações */}
-      <Link
-        href="/settings"
-        aria-label="Abrir configurações"
-        className="hover:text-blue-400 transition-colors"
-      >
-          <Settings size={30} />
+        {/* Ícone de configurações */}
+        <Link
+          href="/settings"
+          aria-label="Abrir configurações"
+          className="group transition"
+        >
+          <Settings size={30} className="text-blue-400 group-hover:text-blue-600 transition-colors" />
         </Link>
       </div>
     </header>

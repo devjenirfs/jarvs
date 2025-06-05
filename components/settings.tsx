@@ -17,7 +17,7 @@ export default function Settings() {
   ];
 
   return (
-    <div className="bg-gradient-to-b from-[#0f0f0f] to-[#111827]">
+    <div className="bg-gradient-to-r from-[#0f0f0f] to-[#111827]">
       <div className="py-[60px] flex flex-col items-center px-4 gap-12 md:gap-16 lg:gap-20">
         {/* Logo e título */}
         <div className="flex flex-col items-center gap-3">

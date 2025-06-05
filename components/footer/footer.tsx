@@ -2,7 +2,9 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#111827] border-t border-zinc-800 text-gray-400 text-center text-sm py-[20px]">
+    <footer
+      className="w-full border-t border-zinc-800 text-gray-400 text-center text-sm py-[20px]"
+    >
       <p>
         © {new Date().getFullYear()} Jarvs – Todos os direitos reservados. v1.0.0
       </p>

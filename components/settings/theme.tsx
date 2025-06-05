@@ -8,7 +8,7 @@ export default function Tema() {
   const [tema, setTema] = useState<'claro' | 'escuro'>('escuro');
 
   return (
-    <div className="pt-[120px] pb-[60px] bg-gradient-to-b from-[#0f0f0f] to-[#111827] text-white">
+    <div className="pt-[120px] pb-[60px] bg-gradient-to-r from-[#0f0f0f] to-[#111827] text-white">
         {/* Título */}
         <div className="text-center mt-10 mb-8 px-4">
             <h1 className="text-3xl font-bold">Tema</h1>

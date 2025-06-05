@@ -40,7 +40,7 @@ import {
     ];
   
     return (
-      <div className="pt-[120px] pb-[60px] bg-gradient-to-b from-[#0f0f0f] to-[#111827] text-white">
+      <div className="pt-[120px] pb-[60px] bg-gradient-to-r from-[#0f0f0f] to-[#111827] text-white">
         <div className="text-center mb-8 px-4">
           <h1 className="text-3xl font-bold">Gerenciar Conta</h1>
           <p className="text-gray-400 mt-2 text-sm">

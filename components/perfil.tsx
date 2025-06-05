@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Perfil() {
   return (
-    <div className="bg-gradient-to-b from-[#0f0f0f] to-[#111827] text-white">
+    <div className="bg-gradient-to-r from-[#0f0f0f] to-[#111827] text-white">
       <div className="pt-[120px] pb-[60px] flex flex-col items-center px-4 py-10 gap-8">
         {/* Avatar e nome */}
         <div className="flex flex-col items-center gap-2">

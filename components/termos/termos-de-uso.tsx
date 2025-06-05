@@ -2,7 +2,7 @@ import React from "react";
 
 export default function TermosDeUso() {
   return (
-    <div className="pt-[120px] pb-[60px] bg-gradient-to-b from-[#0f0f0f] to-[#111827] text-white px-6">
+    <div className="pt-[120px] pb-[60px] bg-gradient-to-r from-[#0f0f0f] to-[#111827] text-white px-6">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold mb-4 text-center">Termos de Uso</h1>
 

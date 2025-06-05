@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Register() {
   return(
-    <div className="py-[60px] bg-gradient-to-b from-[#0f0f0f] to-[#111827] flex flex-col gap-[40px] items-center justify-center">
+    <div className="py-[60px] bg-gradient-to-r from-[#0f0f0f] to-[#111827] flex flex-col gap-[40px] items-center justify-center">
       <Image src="/logo-jarvs.png" alt="Logo da Jarvs" width={300} height={300} />
       <div className="text-white text-2xl md:text-3xl lg:text-4xl font-bold">
         Cadastre-se
