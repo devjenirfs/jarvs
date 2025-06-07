@@ -1,0 +1,7 @@
+{
+    "schema": "./db/schema.ts",
+    "out": "./drizzle",
+    "dialect": "postgresql",
+    "dbCredentials": {
+        "url": "postgresql://jeniffer:jarvs@localhost:5432/postgres"    }
+  }
